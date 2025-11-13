@@ -8,3 +8,7 @@
 .idea/
 .vscode/
 *.DS_Store
+
+# Ignore macOS metadata files
+._*
+.DS_Store
