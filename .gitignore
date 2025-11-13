@@ -1,0 +1,10 @@
+# Ignore Composer dependencies
+/vendor/
+
+# Ignore environment file with credentials
+.env
+
+# Ignore IDE/OS files
+.idea/
+.vscode/
+*.DS_Store
