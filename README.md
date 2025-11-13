@@ -26,11 +26,11 @@ A dynamic, full-stack PHP and MySQL application that serves as a tour guide for 
 
 ## 📸 Application Preview
 
-![Home]()
+![Home](https://github.com/user-attachments/assets/3115a0ba-7c9d-483e-b071-8d20282e0671)
 
-![Attraction]()
+![Attraction](https://github.com/user-attachments/assets/7f0ce977-c8be-478a-9a09-e9e5df980a13)
 
-![Admin]()
+![Admin](https://github.com/user-attachments/assets/20bf36dd-6811-4040-9402-1cdc411b5d7f)
 
 ---
 
@@ -38,7 +38,7 @@ A dynamic, full-stack PHP and MySQL application that serves as a tour guide for 
 
 Here is the Entity Relationship Diagram (ERD) for the database, showing the table structures and relationships.
 
-![Database ERD]()
+![Database ERD](https://github.com/user-attachments/assets/f0ebcfce-ae32-43a1-9cc0-e8a6e5ee750d)
 
 ---
 
