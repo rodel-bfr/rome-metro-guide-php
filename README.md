@@ -1,35 +1,37 @@
 # Rome by Metro: Tour Guide App
 
-A dynamic, full-stack PHP and MySQL application that serves as a tour guide for Rome, organized by metro stations. This project features a public-facing guide and a secure, password-protected admin panel for managing attractions (full CRUD functionality).
+A dynamic, full-stack PHP and MySQL application that serves as a tour guide for Rome, organized by metro stations. This project features a public-facing guide and a secure, password-protected admin panel for managing attractions.
 
 ---
 
 ## ✨ Key Features
 
-* **Dynamic Frontend:** Users can select a metro station to see all nearby tourist attractions.
-* **Interactive Carousel:** Attractions are displayed in a sleek, CSS-driven carousel.
-* **Secure Admin Panel:** A password-protected backend (`/admin.php`) for site administrators.
-* **Full CRUD:** Admins can Create, Read, Update, and Delete attractions.
-* **Secure Authentication:** Admin passwords are securely hashed using `password_hash()` and verified with `password_verify()`.
+* **Interactive Station Guide:** Users can select specific metro stations to dynamically filter and view nearby tourist attractions.
+* **Visual Data Presentation:** Features a custom CSS-driven image carousel to showcase attraction photos without relying on heavy JavaScript libraries.
+* **Secure Admin Console:** A password-protected backend area restricted to authorized administrators. Passwords are securely hashed using `password_hash()` and verified with `password_verify()`.
+* **Content Management System (CMS):** Full CRUD capabilities allowing admins to add, edit, and remove attractions directly from the UI.
 * **Relational Database:** Built on a MySQL database with foreign key constraints to link attractions to stations.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Backend:** PHP (Vanilla)
-* **Database:** MySQL (using the `mysqli` extension with prepared statements to prevent SQL injection)
-* **Frontend:** HTML5, CSS3 (with Flexbox/Grid)
-* **Tooling:** Composer (for package management)
+* **Backend:** PHP (Vanilla - No Frameworks)
+* **Database:** MySQL (Relational Design)
+* **Frontend:** HTML5, CSS3 (Flexbox/Grid), JavaScript
+* **Tooling:** Composer (Dependency Management)
 
 ---
 
 ## 📸 Application Preview
 
+**See the application in action:**
+
 ![Home](https://github.com/user-attachments/assets/3115a0ba-7c9d-483e-b071-8d20282e0671)
 
 ![Attraction](https://github.com/user-attachments/assets/7f0ce977-c8be-478a-9a09-e9e5df980a13)
 
+**Secure Admin Panel:**
 ![Admin](https://github.com/user-attachments/assets/20bf36dd-6811-4040-9402-1cdc411b5d7f)
 
 ---
@@ -42,16 +44,37 @@ Here is the Entity Relationship Diagram (ERD) for the database, showing the tabl
 
 ---
 
-## Installation & Setup
+## 🎯 Technical Focus & Architecture
+
+This project is a **functional prototype** designed to demonstrate core Full Stack fundamentals. It represents a "vertical slice" of a full application—meaning the essential features work perfectly, but it is not intended to be a complete commercial product.
+
+**Why Vanilla PHP?**
+
+The application was deliberately built using **Vanilla PHP (No Frameworks)** to demonstrate understanding of web building blocks without relying on pre-built tools.
+
+**Key Engineering Concepts:**
+* **Manual MVC Pattern:** Implemented a strict separation of concerns (Logic vs. Presentation) manually, organizing code into distinct PHP controllers and HTML views to ensure maintainability.
+* **Raw SQL Security:** Wrote raw database queries using **Prepared Statements (`mysqli`)** to manually handle data sanitization and prevent SQL Injection attacks, rather than relying on an ORM.
+* **Session State Management:** Built a custom authentication system handling login sessions, cookies, and password hashing (`password_hash`/`verify`) to demonstrate how stateless HTTP connections are managed securely.
+
+---
+
+## 🚀 Installation & Setup
+
+### 📋 Prerequisites
+* **PHP 7.4 or 8.x**
+* **MySQL** (via XAMPP, MAMP, or standalone)
+* **[Composer](https://getcomposer.org/)**
+
+### 🔧 Installation
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/rodel-bfr/rome-metro-guide-php.git](https://github.com/rodel-bfr/rome-metro-guide-php.git)
-    cd your-repo-name
+    git clone https://github.com/rodel-bfr/rome-metro-guide-php.git
+    cd rome-metro-guide-php
     ```
 
-2.  **Install PHP dependencies:**
-    (You are using `phpdotenv`, so this is still a required step)
+2.  **Install Dependencies:**
     ```bash
     composer install
     ```
@@ -86,5 +109,5 @@ Here is the Entity Relationship Diagram (ERD) for the database, showing the tabl
     * **Step 9:** Click the "Go" button to create your user.
 
 6.  **Run the application:**
-    * You can now access the site at `http://localhost/rome-guide/`
-    * You can log into the admin panel at `http://localhost/rome-guide/admin.php` with the credentials you just created.
+    * Access the site at `http://localhost/rome-guide/`
+    * Log into the admin panel at `http://localhost/rome-guide/admin.php`
